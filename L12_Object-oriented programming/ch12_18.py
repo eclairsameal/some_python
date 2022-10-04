@@ -3,11 +3,11 @@ class Grandfather():
         print("Grandfather")
 
 class Father(Grandfather):
-    def ation2(self):
+    def ation2(self):      # 定義ation2
         print("Father")
         
 class Uncle(Grandfather):
-    def ation2(self):
+    def ation2(self):      # 定義ation2
         print("Uncle")
 
 class Ivan(Father, Uncle):
@@ -15,6 +15,6 @@ class Ivan(Father, Uncle):
         print("Ivan")
 
 ivan = Ivan()
-ivan.ation3()
-ivan.ation2()
-ivan.ation1()
+ivan.ation3()    # Ivan
+ivan.ation2()    # Ivan -> Father
+ivan.ation1()    # Ivan -> Father -> Grandfather
